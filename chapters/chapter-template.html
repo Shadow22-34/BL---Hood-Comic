@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter Title - BL-HOODZ</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/chapter.css">
+    <link rel="stylesheet" href="../css/comments.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo">BL-HOODZ</a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#chapters">Chapters</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="chapter-container" data-chapter-id="chapter1">
+        <h1 class="chapter-title">Chapter Title</h1>
+        
+        <div class="chapter-content">
+            <!-- Comic panels go here -->
+            <img src="../images/chapter1/panel1.jpg" alt="Panel 1" class="comic-panel">
+            <img src="../images/chapter1/panel2.jpg" alt="Panel 2" class="comic-panel">
+            <!-- Add more panels as needed -->
+        </div>
+        
+        <!-- Navigation buttons -->
+        <div class="chapter-navigation">
+            <button class="nav-btn prev-btn" data-prev="">Previous Chapter</button>
+            <button class="nav-btn home-btn">Home</button>
+            <button class="nav-btn next-btn" data-next="chapter2.html">Next Chapter</button>
+        </div>
+        
+        <!-- Comments section -->
+        <section class="comments-section">
+            <h3>Comments</h3>
+            <form class="comment-form">
+                <div class="form-group">
+                    <label for="comment-name">Name (optional)</label>
+                    <input type="text" id="comment-name" name="name" placeholder="Anonymous">
+                </div>
+                <div class="form-group">
+                    <label for="comment-text">Your Comment</label>
+                    <textarea id="comment-text" name="comment" placeholder="Share your thoughts on this chapter..."></textarea>
+                </div>
+                <button type="submit" class="comment-submit">Post Comment</button>
+            </form>
+            
+            <div class="comments-container">
+                <!-- Comments will be loaded here -->
+                <p class="no-comments">Be the first to comment!</p>
+            </div>
+        </section>
+        
+        <footer class="chapter-footer">
+            <p>&copy; 2023 BL-HOODZ. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="../js/chapter.js"></script>
+</body>
+</html>

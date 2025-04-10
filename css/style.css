@@ -210,7 +210,7 @@ nav ul li a:hover {
 /* Hero Section - Adding poster as background */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bl-hoodz-poster.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/ased.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -219,6 +219,40 @@ nav ul li a:hover {
     text-align: center;
     color: white;
     position: relative;
+}
+
+/* Remove the flames overlay if it's causing issues */
+.hero::after {
+    content: none;
+}
+
+/* Fix button styling */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: translateY(-1px);
 }
 
 .hero::after {

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BL-HOODZ Comic</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/email-preview.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -63,19 +64,28 @@
         </div>
     </section>
 
+    <!-- This is just the contact section part that needs to be updated -->
     <section id="contact" class="contact">
         <h2>Stay Updated</h2>
-        <p>Sign up to receive notifications when new chapters are released!</p>
+        <p>Subscribe to get notified when new chapters are released!</p>
+        
         <form id="subscribe-form">
-            <input type="email" placeholder="Your email address" required>
+            <input type="email" placeholder="Your email address" value="katem2274@gmail.com" required>
             <button type="submit">Subscribe</button>
         </form>
+        
         <div class="social-links">
-            <a href="#" class="social-icon">Instagram</a>
             <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
             <a href="#" class="social-icon">Facebook</a>
         </div>
     </section>
+    
+    <!-- Add this script tag before the closing body tag -->
+    <!-- Add these script tags before your email-subscription.js script -->
+    <!-- Update the EmailJS script tag to include your public key -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/email-subscription.js"></script>
 
     <footer>
         <div class="footer-content">
