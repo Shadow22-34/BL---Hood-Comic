@@ -161,3 +161,22 @@
     <script src="../js/chapter.js"></script>
 </body>
 </html>
+<!-- Add this section after the chapter-header div -->
+<div class="admin-panel">
+    <h3>Admin Controls</h3>
+    <form id="upload-form" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="page-upload">Upload Comic Page:</label>
+            <input type="file" id="page-upload" name="page-upload" accept="image/*">
+        </div>
+        <div class="form-group">
+            <label for="page-number">Page Number:</label>
+            <input type="number" id="page-number" name="page-number" min="1" value="1">
+        </div>
+        <div class="form-group">
+            <label for="page-description">Page Description:</label>
+            <input type="text" id="page-description" name="page-description" placeholder="Enter page description">
+        </div>
+        <button type="submit" class="admin-button">Upload Page</button>
+    </form>
+</div>
