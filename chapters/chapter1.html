@@ -23,30 +23,131 @@
         </nav>
     </header>
 
+    <div class="chapter-progress"></div>
+
     <div class="chapter-container">
         <div class="chapter-header">
-            <h1>Chapter 1</h1>
+            <h1>Chapter 1: Origins</h1>
+            <div class="chapter-controls">
+                <button class="control-button" id="bookmark-button">
+                    <span>Bookmark</span>
+                </button>
+                <button class="control-button" id="share-button">
+                    <span>Share</span>
+                </button>
+                <button class="control-button" id="download-button">
+                    <span>Download</span>
+                </button>
+            </div>
             <div class="chapter-navigation">
-                <span class="nav-button disabled">Previous</span>
-                <span class="chapter-info">Chapter 1</span>
-                <span class="nav-button disabled">Next</span>
+                <span class="nav-button disabled">
+                    <span>&larr;</span> Previous Chapter
+                </span>
+                <span class="chapter-info">Chapter 1 of 1</span>
+                <span class="nav-button disabled">
+                    Next Chapter <span>&rarr;</span>
+                </span>
             </div>
         </div>
         
         <div class="comic-pages">
+            <!-- Test pages for the chapter -->
             <div class="comic-page">
-                <img src="../images/coming-soon.jpg" alt="Coming Soon">
-                <p class="page-info">Chapter 1 - Coming Soon</p>
+                <img src="../images/bl-hoodz-poster.jpg" alt="Chapter 1 Page 1">
+                <p class="page-info">The journey begins with our four protagonists.</p>
             </div>
-            <!-- More pages will be added here when the chapter is released -->
+            <div class="comic-page">
+                <img src="../images/page2.jpg" alt="Chapter 1 Page 2">
+                <p class="page-info">The mysterious powers begin to manifest.</p>
+            </div>
+            <div class="comic-page">
+                <img src="../images/page3.jpg" alt="Chapter 1 Page 3">
+                <p class="page-info">Tensions rise as the group faces their first challenge.</p>
+            </div>
+            <div class="comic-page">
+                <img src="../images/page4.jpg" alt="Chapter 1 Page 4">
+                <p class="page-info">A shocking revelation changes everything.</p>
+            </div>
+            <div class="comic-page">
+                <img src="../images/page5.jpg" alt="Chapter 1 Page 5">
+                <p class="page-info">The team must make a difficult decision.</p>
+            </div>
         </div>
         
         <div class="chapter-footer">
             <div class="chapter-navigation">
-                <span class="nav-button disabled">Previous</span>
-                <span class="chapter-info">Chapter 1</span>
-                <span class="nav-button disabled">Next</span>
+                <span class="nav-button disabled">
+                    <span>&larr;</span> Previous Chapter
+                </span>
+                <span class="chapter-info">Chapter 1 of 1</span>
+                <span class="nav-button disabled">
+                    Next Chapter <span>&rarr;</span>
+                </span>
             </div>
+            
+            <div class="chapter-comments">
+                <h3>Comments</h3>
+                <form class="comment-form">
+                    <textarea placeholder="Share your thoughts on this chapter..."></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+                <div class="comments-list">
+                    <!-- Comments will be loaded here -->
+                    <p>Be the first to comment on this chapter!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="options-toggle">⚙️</div>
+    
+    <div class="reading-options">
+        <h3>Reading Options</h3>
+        
+        <div class="option-group">
+            <span class="option-label">Dark Mode</span>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        
+        <div class="option-group">
+            <span class="option-label">Font Size</span>
+            <input type="range" id="font-size-slider" min="12" max="24" value="16">
+        </div>
+        
+        <div class="option-group">
+            <span class="option-label">Reading Mode</span>
+            <select id="reading-mode">
+                <option value="continuous">Continuous</option>
+                <option value="paged">Paged</option>
+                <option value="webtoon">Webtoon</option>
+            </select>
+        </div>
+        
+        <div class="option-group">
+            <span class="option-label">Enable Zoom</span>
+            <label class="switch">
+                <input type="checkbox" id="zoom-toggle" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        
+        <div class="option-group">
+            <span class="option-label">Fullscreen</span>
+            <label class="switch">
+                <input type="checkbox" id="fullscreen-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        
+        <div class="option-group">
+            <span class="option-label">Auto-Scroll</span>
+            <label class="switch">
+                <input type="checkbox" id="auto-scroll-toggle">
+                <span class="slider round"></span>
+            </label>
         </div>
     </div>
 
@@ -57,5 +158,6 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/chapter.js"></script>
 </body>
 </html>
